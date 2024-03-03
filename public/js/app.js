@@ -21730,7 +21730,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
     },
     bayar: function bayar(checkout) {
       if (checkout.length > 0) {
-        alert('Pesanan sedang di proses kami akan segera menganterkan paket pesananmu');
+        alert('Pesanan di proses kami akan segera menganterkan paket pesananmu silahkan tunggu');
       } else {
         alert('Anda belum memasukan apa apa ke keranjang');
       }
