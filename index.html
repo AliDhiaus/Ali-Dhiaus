@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -84,4 +85,100 @@
     
     </main>
   </body>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="https://skyroute66.com/eurorbit/images/banner.jpg">
+    </header>
+    <div class="container">
+        <h1>EurOrbit</h1>
+        <h4>European Weather Forecast</h4>
+        <form id="query-form">
+            <select name="citySelected" id="citySelected" data-toggle="tooltip" onclick="javascript:toolTipReset()" data-placement="bottom" title="" data-original-title="Drop down and select a city to see the forecast">
+                <option disabled="" selected="" value=""> -- select a city -- </option>
+                <option value="{&quot;lat&quot;:&quot;52.367&quot;,&quot;lon&quot;:&quot;4.904&quot;}">Amsterdam, Netherlands</option>
+                <option value="{&quot;lat&quot;:&quot;39.933&quot;,&quot;lon&quot;:&quot;32.859&quot;}">Ankara, Turkey</option>
+                <option value="{&quot;lat&quot;:&quot;56.134&quot;,&quot;lon&quot;:&quot;12.945&quot;}">Åstorp, Sweden</option>
+                <option value="{&quot;lat&quot;:&quot;37.983&quot;,&quot;lon&quot;:&quot;23.727&quot;}">Athens, Greece</option>
+                <option value="{&quot;lat&quot;:&quot;54.597&quot;,&quot;lon&quot;:&quot;-5.930&quot;}">Belfast, Northern Ireland, UK</option>
+                <option value="{&quot;lat&quot;:&quot;41.387&quot;,&quot;lon&quot;:&quot;2.168&quot;}">Barcelona, Spain</option>
+                <option value="{&quot;lat&quot;:&quot;52.520&quot;,&quot;lon&quot;:&quot;13.405&quot;}">Berlin, Germany</option>
+                <option value="{&quot;lat&quot;:&quot;46.948&quot;,&quot;lon&quot;:&quot;7.447&quot;}">Bern, Switzerland</option>
+                <option value="{&quot;lat&quot;:&quot;43.263&quot;,&quot;lon&quot;:&quot;-2.935&quot;}">Bilbao, Basque Country, Spain</option>
+                <option value="{&quot;lat&quot;:&quot;50.847&quot;,&quot;lon&quot;:&quot;4.357&quot;}">Brussels, Belgium</option>
+                <option value="{&quot;lat&quot;:&quot;47.497&quot;,&quot;lon&quot;:&quot;19.040&quot;}">Bucharest, Romania</option>
+                <option value="{&quot;lat&quot;:&quot;59.329&quot;,&quot;lon&quot;:&quot;18.068&quot;}">Budapest, Hungary</option>
+                <option value="{&quot;lat&quot;:&quot;51.483&quot;,&quot;lon&quot;:&quot;-3.168&quot;}">Cardiff, Wales, UK</option>
+                <option value="{&quot;lat&quot;:&quot;50.937&quot;,&quot;lon&quot;:&quot;6.96&quot;}">Cologne, Germany</option>
+                <option value="{&quot;lat&quot;:&quot;55.676&quot;,&quot;lon&quot;:&quot;12.568&quot;}">Copenhagen, Denmark</option>
+                <option value="{&quot;lat&quot;:&quot;51.898&quot;,&quot;lon&quot;:&quot;-8.475&quot;}">Cork, Ireland</option>
+                <option value="{&quot;lat&quot;:&quot;53.349&quot;,&quot;lon&quot;:&quot;-6.260&quot;}">Dublin, Ireland</option>
+                <option value="{&quot;lat&quot;:&quot;55.953&quot;,&quot;lon&quot;:&quot;-3.188&quot;}">Edinburgh, Scotland, UK</option>
+                <option value="{&quot;lat&quot;:&quot;43.7696&quot;,&quot;lon&quot;:&quot;11.255&quot;}">Florence, Italy</option>
+                <option value="{&quot;lat&quot;:&quot;50.110&quot;,&quot;lon&quot;:&quot;8.682&quot;}">Frankfurt, Germany</option>        
+                <option value="{&quot;lat&quot;:&quot;43.254&quot;,&quot;lon&quot;:&quot;6.637&quot;}">French Riviera, France</option>
+                <option value="{&quot;lat&quot;:&quot;32.650&quot;,&quot;lon&quot;:&quot;-16.908&quot;}">Funchal, Madeira, Portugual</option>
+                <option value="{&quot;lat&quot;:&quot;36.140&quot;,&quot;lon&quot;:&quot;-5.353&quot;}">Gibraltar, British Territory</option>   
+                <option value="{&quot;lat&quot;:&quot;57.708&quot;,&quot;lon&quot;:&quot;11.974&quot;}">Gothenburg, Sweden</option>     
+                <option value="{&quot;lat&quot;:&quot;53.548&quot;,&quot;lon&quot;:&quot;9.987&quot;}">Hamburg, Germany</option>
+                <option value="{&quot;lat&quot;:&quot;60.169&quot;,&quot;lon&quot;:&quot;24.938&quot;}">Helsinki, Finland</option>
+                <option value="{&quot;lat&quot;:&quot;39.020&quot;,&quot;lon&quot;:&quot;1.482&quot;}">Ibiza, Spain</option>
+                <option value="{&quot;lat&quot;:&quot;50.450&quot;,&quot;lon&quot;:&quot;30.523&quot;}">Kyiv, Ukraine</option>
+                <option value="{&quot;lat&quot;:&quot;61.115&quot;,&quot;lon&quot;:&quot;10.466&quot;}">Lillehammer, Norway</option>
+                <option value="{&quot;lat&quot;:&quot;38.722&quot;,&quot;lon&quot;:&quot;-9.139&quot;}">Lisbon, Portugual</option>
+                <option value="{&quot;lat&quot;:&quot;51.507&quot;,&quot;lon&quot;:&quot;-0.127&quot;}">London, England, UK</option>        
+                <option value="{&quot;lat&quot;:&quot;40.416&quot;,&quot;lon&quot;:&quot;-3.703&quot;}">Madrid, Spain</option>
+                <option value="{&quot;lat&quot;:&quot;39.695&quot;,&quot;lon&quot;:&quot;3.017&quot;}">Mallorca, Spain</option>
+                <option value="{&quot;lat&quot;:&quot;53.480&quot;,&quot;lon&quot;:&quot;-2.242&quot;}">Manchester, England, UK</option>        
+                <option value="{&quot;lat&quot;:&quot;43.296&quot;,&quot;lon&quot;:&quot;5.369&quot;}">Marseille, France</option>
+                <option value="{&quot;lat&quot;:&quot;27.760&quot;,&quot;lon&quot;:&quot;-15.586&quot;}">Maspalomas, Gran Canaria, Spain</option>
+                <option value="{&quot;lat&quot;:&quot;45.464&quot;,&quot;lon&quot;:&quot;9.190&quot;}">Milan, Italy</option>
+                <option value="{&quot;lat&quot;:&quot;48.135&quot;,&quot;lon&quot;:&quot;11.582&quot;}">Munich, Germany</option>
+                <option value="{&quot;lat&quot;:&quot;40.851&quot;,&quot;lon&quot;:&quot;14.268&quot;}">Naples, Italy</option>
+                <option value="{&quot;lat&quot;:&quot;43.034&quot;,&quot;lon&quot;:&quot;-2.417&quot;}">Oñati, Basque Country, Spain</option>
+                <option value="{&quot;lat&quot;:&quot;59.913&quot;,&quot;lon&quot;:&quot;10.752&quot;}">Oslo, Norway</option>
+                <option value="{&quot;lat&quot;:&quot;48.856&quot;,&quot;lon&quot;:&quot;2.352&quot;}">Paris, France</option>
+                <option value="{&quot;lat&quot;:&quot;50.075&quot;,&quot;lon&quot;:&quot;14.437&quot;}">Prague, Czech Republic</option>
+                <option value="{&quot;lat&quot;:&quot;64.146&quot;,&quot;lon&quot;:&quot;-21.942&quot;}">Reykjavík, Iceland</option>
+                <option value="{&quot;lat&quot;:&quot;56.879&quot;,&quot;lon&quot;:&quot;24.603&quot;}">Riga, Latvia</option>
+                <option value="{&quot;lat&quot;:&quot;41.902&quot;,&quot;lon&quot;:&quot;12.496&quot;}">Rome, Italy</option>
+                <option value="{&quot;lat&quot;:&quot;39.453&quot;,&quot;lon&quot;:&quot;-31.127&quot;}">Santa Cruz das Flores, Azores, Portugual</option>
+                <option value="{&quot;lat&quot;:&quot;28.463&quot;,&quot;lon&quot;:&quot;-16.251&quot;}">Santa Cruz de Tenerife, Tenerife, Spain</option>
+                <option value="{&quot;lat&quot;:&quot;57.273&quot;,&quot;lon&quot;:&quot;-6.215&quot;}">Skye, Scotland, UK</option>
+                <option value="{&quot;lat&quot;:&quot;42.697&quot;,&quot;lon&quot;:&quot;23.321&quot;}">Sofia, Bulgaria</option>
+                <option value="{&quot;lat&quot;:&quot;59.329&quot;,&quot;lon&quot;:&quot;18.068&quot;}">Stockholm, Sweden</option>
+                <option value="{&quot;lat&quot;:&quot;59.437&quot;,&quot;lon&quot;:&quot;24.753&quot;}">Tallinn, Estonia</option>
+                <option value="{&quot;lat&quot;:&quot;18.208&quot;,&quot;lon&quot;:&quot;16.373&quot;}">Vienna, Austria</option>
+                <option value="{&quot;lat&quot;:&quot;52.229&quot;,&quot;lon&quot;:&quot;21.012&quot;}">Warsaw, Poland</option>
+                <option value="{&quot;lat&quot;:&quot;53.961&quot;,&quot;lon&quot;:&quot;-1.07&quot;}">York, England, UK</option>
+                <option value="{&quot;lat&quot;:&quot;47.376&quot;,&quot;lon&quot;:&quot;8.541&quot;}">Zurich, Switzerland</option>
+            </select>
+            <p id="get-results-heading"></p>
+        </form>
+        <!-- <div id="search-results-heading" class="results"></div> -->
+        <div id="results" class="results"></div>
+    </div>
+    <footer>
+        <img src="images/cloudline.png">
+        <p>© Copyright 2023 EurOrbit</p>
+    </footer>
+    <!-- Tooltip script -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+>>>>>>> 7ffd0877cf1d0d9d8cc6c09f7cfd628101858362
 </html>
